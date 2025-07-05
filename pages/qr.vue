@@ -3,12 +3,15 @@
   <div class="bg-[#18191b] p-8 rounded-xl shadow-xl border-[#313a45] border">
     <h2 class="text-white font-bold mb-4">QR Codes</h2>
     <input
-      class="p-2 bg-[#18181c] border-[#313a45] border w-full rounded-lg"
+      class="p-2 bg-[#18181c] border-[#313a45] border w-full rounded-lg text-white"
       v-model="text"
       type="text"
       placeholder="Enter your 'URL'"
     />
-    <img class="mt-2 w-[700px]" :src="qrcode" alt="QR Code" />
+
+    <div class="flex justify-center">
+      <img class="mt-2 w-[600px]" :src="qrcode" alt="QR Code" />
+    </div>
   </div>
 </template>
 
@@ -16,6 +19,6 @@
 import { useQRCode } from '@vueuse/integrations/useQRCode'
 import { shallowRef } from 'vue'
 
-const text = shallowRef('')
-const qrcode = useQRCode(text, { width: 700 })
+const text = shallowRef('x')
+const qrcode = useQRCode(text, { width: 600, margin: 3 })
 </script>
