@@ -30,15 +30,17 @@
               QR Code Generator
             </NuxtLink>
           </li>
+          <li>
+            <NuxtLink
+              to="/array-converter"
+              class="block px-4 py-3 rounded-lg hover:bg-gray-700 transition-colors duration-200 font-['DM_Sans'] text-gray-300 hover:text-gray-100"
+              active-class="bg-gray-700 text-gray-100"
+            >
+              Array Converter
+            </NuxtLink>
+          </li>
         </ul>
       </nav>
-
-      <!-- Footer -->
-      <div class="p-4 border-t border-gray-700">
-        <p class="text-xs text-gray-500 font-['DM_Sans']">
-          Built with Nuxt
-        </p>
-      </div>
     </aside>
 
     <!-- Main Content -->
@@ -73,6 +75,8 @@ const pageTitle = computed(() => {
       return 'Dashboard'
     case '/qr':
       return 'QR Code Generator'
+    case '/array-converter':
+      return 'Array Converter'
     default:
       return 'Random Tools'
   }
@@ -83,6 +87,9 @@ const currentTime = ref('')
 const updateTime = () => {
   currentTime.value = new Date().toLocaleTimeString()
 }
-updateTime()
-setInterval(updateTime, 1000)
+
+onMounted(() => {
+  updateTime()
+  setInterval(updateTime, 1000)
+})
 </script>

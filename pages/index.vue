@@ -62,15 +62,15 @@
         </NuxtLink>
       </div>
 
-      <!-- Placeholder for future tools -->
+      <!-- Array Converter Tool Card -->
       <div
-        class="bg-gray-800/50 rounded-xl p-6 border border-gray-700/50 border-dashed"
+        class="bg-gray-800 rounded-xl p-6 border border-gray-700 hover:border-gray-600 transition-colors duration-200 animate-slide-up"
       >
         <div
-          class="w-12 h-12 bg-gray-700/50 rounded-lg flex items-center justify-center mb-4"
+          class="w-12 h-12 bg-gray-700 rounded-lg flex items-center justify-center mb-4"
         >
           <svg
-            class="w-6 h-6 text-gray-500"
+            class="w-6 h-6 text-gray-300"
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
@@ -79,16 +79,36 @@
               stroke-linecap="round"
               stroke-linejoin="round"
               stroke-width="2"
-              d="M12 6v6m0 0v6m0-6h6m-6 0H6"
+              d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"
             />
           </svg>
         </div>
-        <h3 class="font-['DM_Sans'] font-medium text-xl text-gray-500 mb-2">
-          Coming Soon
+        <h3 class="font-['DM_Sans'] font-medium text-xl text-gray-200 mb-2">
+          Array Converter
         </h3>
-        <p class="font-['DM_Sans'] text-gray-600">
-          More tools will be added here.
+        <p class="font-['DM_Sans'] text-gray-400 mb-4">
+          Convert a list of values into a formatted array string with
+          parentheses and quotes.
         </p>
+        <NuxtLink
+          to="/array-converter"
+          class="inline-flex items-center px-4 py-2 bg-gray-700 hover:bg-gray-600 text-gray-200 rounded-lg transition-colors duration-200 font-['DM_Sans']"
+        >
+          Convert to Array
+          <svg
+            class="w-4 h-4 ml-2"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M9 5l7 7-7 7"
+            />
+          </svg>
+        </NuxtLink>
       </div>
     </div>
   </div>
