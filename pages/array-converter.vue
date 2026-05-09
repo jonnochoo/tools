@@ -1,24 +1,24 @@
 <template>
-  <div class="max-w-4xl mx-auto">
+  <div class="w-full max-w-4xl mx-auto px-0">
     <!-- Description -->
-    <div class="mb-8">
-      <p class="font-['DM_Sans'] text-gray-400 leading-relaxed">
+    <div class="mb-6 md:mb-8">
+      <p class="font-['DM_Sans'] text-sm md:text-base text-gray-400 leading-relaxed">
         Convert a list of values (one per line) into a formatted array string
         with parentheses and single quotes.
       </p>
     </div>
 
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8">
       <!-- Input Section -->
       <div class="space-y-4">
-        <h3 class="font-['DM_Sans'] font-medium text-lg text-gray-200">
+        <h3 class="font-['DM_Sans'] font-medium text-base md:text-lg text-gray-200">
           Input
         </h3>
 
         <!-- Input Textarea -->
         <textarea
           v-model="inputText"
-          class="w-full h-64 p-4 bg-gray-700 border border-gray-600 rounded-lg text-gray-100 placeholder-gray-500 font-['JetBrains_Mono'] text-sm focus:border-gray-500 focus:outline-none transition-colors duration-200 resize-none"
+          class="w-full h-48 md:h-64 p-3 md:p-4 bg-gray-700 border border-gray-600 rounded-lg text-gray-100 placeholder-gray-500 font-['JetBrains_Mono'] text-xs md:text-sm focus:border-gray-500 focus:outline-none transition-colors duration-200 resize-none"
           placeholder="Enter one value per line...&#10;&#10;a&#10;b&#10;c"
           @input="convertToArray"
         ></textarea>
@@ -31,7 +31,7 @@
               type="checkbox"
               class="w-4 h-4 bg-gray-700 border-gray-600 rounded focus:ring-gray-500 focus:ring-2"
             />
-            <span class="font-['DM_Sans'] text-sm text-gray-400"
+            <span class="font-['DM_Sans'] text-xs md:text-sm text-gray-400"
               >Trim whitespace</span
             >
           </label>
@@ -42,7 +42,7 @@
               type="checkbox"
               class="w-4 h-4 bg-gray-700 border-gray-600 rounded focus:ring-gray-500 focus:ring-2"
             />
-            <span class="font-['DM_Sans'] text-sm text-gray-400"
+            <span class="font-['DM_Sans'] text-xs md:text-sm text-gray-400"
               >Skip empty lines</span
             >
           </label>
@@ -51,13 +51,13 @@
 
       <!-- Output Section -->
       <div class="space-y-4">
-        <div class="flex items-center justify-between">
-          <h3 class="font-['DM_Sans'] font-medium text-lg text-gray-200">
+        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
+          <h3 class="font-['DM_Sans'] font-medium text-base md:text-lg text-gray-200">
             Output
           </h3>
           <button
             @click="copyToClipboard"
-            class="px-4 py-2 bg-gray-700 hover:bg-gray-600 text-gray-200 rounded-lg transition-colors duration-200 font-['DM_Sans'] text-sm flex items-center space-x-2"
+            class="px-3 md:px-4 py-2 bg-gray-700 hover:bg-gray-600 text-gray-200 rounded-lg transition-colors duration-200 font-['DM_Sans'] text-xs md:text-sm flex items-center justify-center sm:justify-start space-x-2 w-full sm:w-auto"
             :disabled="!outputText"
           >
             <svg
@@ -81,12 +81,12 @@
         <textarea
           v-model="outputText"
           readonly
-          class="w-full h-64 p-4 bg-gray-800 border border-gray-600 rounded-lg text-gray-100 font-['JetBrains_Mono'] text-sm focus:outline-none resize-none"
+          class="w-full h-48 md:h-64 p-3 md:p-4 bg-gray-800 border border-gray-600 rounded-lg text-gray-100 font-['JetBrains_Mono'] text-xs md:text-sm focus:outline-none resize-none"
           placeholder="Formatted array will appear here..."
         ></textarea>
 
         <!-- Stats -->
-        <div class="text-sm text-gray-500 font-['DM_Sans']">
+        <div class="text-xs md:text-sm text-gray-500 font-['DM_Sans']">
           {{ itemCount }} items converted
         </div>
       </div>

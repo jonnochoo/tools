@@ -6,6 +6,16 @@ export default defineNuxtConfig({
     port: 3002,
   },
   modules: ['@nuxtjs/tailwindcss', '@nuxtjs/google-fonts'],
+  app: {
+    head: {
+      meta: [
+        {
+          name: 'viewport',
+          content: 'width=device-width, initial-scale=1',
+        },
+      ],
+    },
+  },
   tailwindcss: {
     exposeConfig: true,
     viewer: true,

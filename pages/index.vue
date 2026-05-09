@@ -2,20 +2,20 @@
   <div class="max-w-4xl mx-auto">
     <!-- Welcome Section -->
     <div class="mb-12 animate-fade-in">
-      <h1 class="font-['DM_Sans'] font-light text-4xl text-gray-100 mb-4">
+      <h1 class="font-['DM_Sans'] font-light text-3xl md:text-4xl text-gray-100 mb-4">
         Welcome to Random Tools
       </h1>
-      <p class="font-['DM_Sans'] text-lg text-gray-400 leading-relaxed">
+      <p class="font-['DM_Sans'] text-base md:text-lg text-gray-400 leading-relaxed">
         A collection of useful utilities and tools to make your workflow easier.
-        Choose from the sidebar to get started.
+        Choose from the menu to get started.
       </p>
     </div>
 
     <!-- Tools Grid -->
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
       <!-- QR Code Tool Card -->
       <div
-        class="bg-gray-800 rounded-xl p-6 border border-gray-700 hover:border-gray-600 transition-colors duration-200 animate-slide-up"
+        class="bg-gray-800 rounded-lg md:rounded-xl p-4 md:p-6 border border-gray-700 hover:border-gray-600 transition-colors duration-200 animate-slide-up"
       >
         <div
           class="w-12 h-12 bg-gray-700 rounded-lg flex items-center justify-center mb-4"
@@ -34,16 +34,16 @@
             />
           </svg>
         </div>
-        <h3 class="font-['DM_Sans'] font-medium text-xl text-gray-200 mb-2">
+        <h3 class="font-['DM_Sans'] font-medium text-lg md:text-xl text-gray-200 mb-2">
           QR Code Generator
         </h3>
-        <p class="font-['DM_Sans'] text-gray-400 mb-4">
+        <p class="font-['DM_Sans'] text-sm md:text-base text-gray-400 mb-4">
           Generate QR codes from URLs or text. Perfect for sharing links
           quickly.
         </p>
         <NuxtLink
           to="/qr"
-          class="inline-flex items-center px-4 py-2 bg-gray-700 hover:bg-gray-600 text-gray-200 rounded-lg transition-colors duration-200 font-['DM_Sans']"
+          class="inline-flex items-center px-3 md:px-4 py-2 bg-gray-700 hover:bg-gray-600 text-gray-200 rounded-lg transition-colors duration-200 font-['DM_Sans'] text-sm md:text-base"
         >
           Generate QR Code
           <svg
@@ -64,7 +64,7 @@
 
       <!-- Array Converter Tool Card -->
       <div
-        class="bg-gray-800 rounded-xl p-6 border border-gray-700 hover:border-gray-600 transition-colors duration-200 animate-slide-up"
+        class="bg-gray-800 rounded-lg md:rounded-xl p-4 md:p-6 border border-gray-700 hover:border-gray-600 transition-colors duration-200 animate-slide-up"
       >
         <div
           class="w-12 h-12 bg-gray-700 rounded-lg flex items-center justify-center mb-4"
@@ -83,16 +83,16 @@
             />
           </svg>
         </div>
-        <h3 class="font-['DM_Sans'] font-medium text-xl text-gray-200 mb-2">
+        <h3 class="font-['DM_Sans'] font-medium text-lg md:text-xl text-gray-200 mb-2">
           Array Converter
         </h3>
-        <p class="font-['DM_Sans'] text-gray-400 mb-4">
+        <p class="font-['DM_Sans'] text-sm md:text-base text-gray-400 mb-4">
           Convert a list of values into a formatted array string with
           parentheses and quotes.
         </p>
         <NuxtLink
           to="/array-converter"
-          class="inline-flex items-center px-4 py-2 bg-gray-700 hover:bg-gray-600 text-gray-200 rounded-lg transition-colors duration-200 font-['DM_Sans']"
+          class="inline-flex items-center px-3 md:px-4 py-2 bg-gray-700 hover:bg-gray-600 text-gray-200 rounded-lg transition-colors duration-200 font-['DM_Sans'] text-sm md:text-base"
         >
           Convert to Array
           <svg
