@@ -51,6 +51,16 @@
             Cricket Averages
           </NuxtLink>
         </li>
+        <li>
+          <NuxtLink
+            to="/password-generator"
+            @click="closeSidebar"
+            class="block px-4 py-3 rounded-lg hover:bg-sidebar-accent transition-colors duration-200 font-sans text-sidebar-foreground hover:text-sidebar-accent-foreground"
+            active-class="bg-sidebar-accent-foreground text-sidebar-accent-foreground"
+          >
+            Password Generator
+          </NuxtLink>
+        </li>
       </ul>
     </nav>
   </aside>
