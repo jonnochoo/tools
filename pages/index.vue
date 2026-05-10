@@ -3,11 +3,13 @@
     <!-- Welcome Section -->
     <div class="mb-12 animate-fade-in">
       <h1 class="font-sans font-bold text-3xl md:text-4xl text-foreground mb-4">
-        Welcome to Random Tools
+        Welcome to The Shed
       </h1>
-      <p class="font-sans text-base md:text-lg text-muted-foreground leading-relaxed">
-        A collection of useful utilities and tools to make your workflow easier.
-        Choose from the menu to get started.
+      <p
+        class="font-sans text-base md:text-lg text-muted-foreground leading-relaxed"
+      >
+        A collection of useful utilities and tools...they are random like things
+        in a shed.
       </p>
     </div>
 
@@ -34,7 +36,9 @@
             />
           </svg>
         </div>
-        <h3 class="font-sans font-semibold text-lg md:text-xl text-card-foreground mb-2">
+        <h3
+          class="font-sans font-semibold text-lg md:text-xl text-card-foreground mb-2"
+        >
           QR Code Generator
         </h3>
         <p class="font-sans text-sm md:text-base text-muted-foreground mb-4">
@@ -83,7 +87,9 @@
             />
           </svg>
         </div>
-        <h3 class="font-sans font-semibold text-lg md:text-xl text-card-foreground mb-2">
+        <h3
+          class="font-sans font-semibold text-lg md:text-xl text-card-foreground mb-2"
+        >
           Array Converter
         </h3>
         <p class="font-sans text-sm md:text-base text-muted-foreground mb-4">

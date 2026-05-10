@@ -4,10 +4,8 @@
     :class="isOpen ? 'translate-x-0' : '-translate-x-full md:translate-x-0'"
   >
     <!-- Logo/Brand (desktop only) -->
-    <div class="hidden md:block p-6 border-b border-sidebar-border">
-      <h1 class="font-sans font-medium text-xl text-sidebar-foreground">
-        Random Tools
-      </h1>
+    <div class="hidden md:block p-6">
+      <Logo />
     </div>
 
     <!-- Navigation -->

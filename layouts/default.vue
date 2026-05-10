@@ -6,28 +6,30 @@
     <div
       class="md:hidden fixed top-0 left-0 right-0 bg-card border-b border-border px-4 py-4 flex items-center justify-between z-50"
     >
-      <h1 class="font-sans font-medium text-lg text-foreground">
-        Random Tools
-      </h1>
+      <Logo />
       <div class="flex items-center gap-2">
         <button
           @click="toggleDarkMode"
-          class="p-2 hover:bg-secondary rounded-lg transition-colors"
-          aria-label="Toggle dark mode"
+          class="flex items-center gap-2 px-3 py-2 bg-secondary hover:bg-secondary/80 border border-border rounded-lg transition-colors duration-200"
+          :aria-label="`Switch to ${isDarkMode ? 'light' : 'dark'} mode`"
+          :title="`${isDarkMode ? 'Light' : 'Dark'} mode`"
         >
           <svg
             v-if="isDarkMode"
-            class="w-6 h-6"
+            class="w-5 h-5"
             fill="currentColor"
             viewBox="0 0 24 24"
           >
             <path
-              d="M12 18a6 6 0 100-12 6 6 0 000 12zM20.485 9.071A9.001 9.001 0 003.515 14.93m16.97-5.86A9.001 9.001 0 006.485 19.85"
+              d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"
             />
           </svg>
-          <svg v-else class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+          <svg v-else class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
             <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" />
           </svg>
+          <span class="text-sm font-medium">{{
+            isDarkMode ? 'Dark' : 'Light'
+          }}</span>
         </button>
         <button
           @click="mobileMenuOpen = !mobileMenuOpen"
@@ -64,9 +66,7 @@
     <!-- Main Content -->
     <div class="flex-1 flex flex-col w-full md:w-auto">
       <!-- Header (desktop only) -->
-      <header
-        class="hidden md:block bg-card border-b border-border px-6 py-4"
-      >
+      <header class="hidden md:block bg-card border-b border-border px-6 py-4">
         <div class="flex items-center justify-between">
           <h2 class="font-sans font-semibold text-lg text-card-foreground">
             {{ pageTitle }}
@@ -77,8 +77,9 @@
             </div>
             <button
               @click="toggleDarkMode"
-              class="p-2 hover:bg-secondary rounded-lg transition-colors duration-200"
-              aria-label="Toggle dark mode"
+              class="flex items-center gap-2 px-3 py-2 bg-muted hover:bg-secondary/80 border border-border rounded-full transition-colors duration-200"
+              :aria-label="`Switch to ${isDarkMode ? 'light' : 'dark'} mode`"
+              :title="`${isDarkMode ? 'Light' : 'Dark'} mode`"
             >
               <svg
                 v-if="isDarkMode"
@@ -87,7 +88,7 @@
                 viewBox="0 0 24 24"
               >
                 <path
-                  d="M12 18a6 6 0 100-12 6 6 0 000 12zM20.485 9.071A9.001 9.001 0 003.515 14.93m16.97-5.86A9.001 9.001 0 006.485 19.85"
+                  d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"
                 />
               </svg>
               <svg
@@ -98,6 +99,9 @@
               >
                 <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" />
               </svg>
+              <span class="text-sm font-medium">{{
+                isDarkMode ? 'Dark' : 'Light'
+              }}</span>
             </button>
           </div>
         </div>
@@ -145,7 +149,7 @@ const pageTitle = computed(() => {
     case '/array-converter':
       return 'Array Converter'
     default:
-      return 'Random Tools'
+      return 'The Shed'
   }
 })
 
