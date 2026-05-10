@@ -11,62 +11,27 @@
     <!-- Navigation -->
     <nav class="flex-1 p-4">
       <ul class="space-y-2">
-        <li>
-          <NuxtLink
-            to="/"
-            @click="closeSidebar"
-            class="block px-4 py-3 rounded-lg hover:bg-sidebar-accent transition-colors duration-200 font-sans text-sidebar-foreground hover:text-sidebar-accent-foreground"
-            active-class="bg-sidebar-accent-foreground text-sidebar-accent-foreground"
-          >
-            Home
-          </NuxtLink>
-        </li>
-        <li>
-          <NuxtLink
-            to="/qr"
-            @click="closeSidebar"
-            class="block px-4 py-3 rounded-lg hover:bg-sidebar-accent transition-colors duration-200 font-sans text-sidebar-foreground hover:text-sidebar-accent-foreground"
-            active-class="bg-sidebar-accent-foreground text-sidebar-accent-foreground"
-          >
-            QR Code Generator
-          </NuxtLink>
-        </li>
-        <li>
-          <NuxtLink
-            to="/array-converter"
-            @click="closeSidebar"
-            class="block px-4 py-3 rounded-lg hover:bg-sidebar-accent transition-colors duration-200 font-sans text-sidebar-foreground hover:text-sidebar-accent-foreground"
-            active-class="bg-sidebar-accent-foreground text-sidebar-accent-foreground"
-          >
-            Array Converter
-          </NuxtLink>
-        </li>
-        <li>
-          <NuxtLink
-            to="/cricket-averages"
-            @click="closeSidebar"
-            class="block px-4 py-3 rounded-lg hover:bg-sidebar-accent transition-colors duration-200 font-sans text-sidebar-foreground hover:text-sidebar-accent-foreground"
-            active-class="bg-sidebar-accent-foreground text-sidebar-accent-foreground"
-          >
-            Cricket Averages
-          </NuxtLink>
-        </li>
-        <li>
-          <NuxtLink
-            to="/password-generator"
-            @click="closeSidebar"
-            class="block px-4 py-3 rounded-lg hover:bg-sidebar-accent transition-colors duration-200 font-sans text-sidebar-foreground hover:text-sidebar-accent-foreground"
-            active-class="bg-sidebar-accent-foreground text-sidebar-accent-foreground"
-          >
-            Password Generator
-          </NuxtLink>
-        </li>
+        <SidebarNavLink to="/" @close="closeSidebar">Home</SidebarNavLink>
+        <SidebarNavLink to="/qr" @close="closeSidebar"
+          >QR Code Generator</SidebarNavLink
+        >
+        <SidebarNavLink to="/array-converter" @close="closeSidebar"
+          >Array Converter</SidebarNavLink
+        >
+        <SidebarNavLink to="/cricket-averages" @close="closeSidebar"
+          >Cricket Averages</SidebarNavLink
+        >
+        <SidebarNavLink to="/password-generator" @close="closeSidebar"
+          >Password Generator</SidebarNavLink
+        >
       </ul>
     </nav>
   </aside>
 </template>
 
 <script setup lang="ts">
+import SidebarNavLink from './SidebarNavLink.vue'
+
 defineProps<{
   isOpen: boolean
 }>()
