@@ -2,10 +2,10 @@
   <div class="max-w-4xl mx-auto">
     <!-- Welcome Section -->
     <div class="mb-12 animate-fade-in">
-      <h1 class="font-['DM_Sans'] font-light text-3xl md:text-4xl text-gray-100 mb-4">
+      <h1 class="font-sans font-bold text-3xl md:text-4xl text-foreground mb-4">
         Welcome to Random Tools
       </h1>
-      <p class="font-['DM_Sans'] text-base md:text-lg text-gray-400 leading-relaxed">
+      <p class="font-sans text-base md:text-lg text-muted-foreground leading-relaxed">
         A collection of useful utilities and tools to make your workflow easier.
         Choose from the menu to get started.
       </p>
@@ -15,13 +15,13 @@
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
       <!-- QR Code Tool Card -->
       <div
-        class="bg-gray-800 rounded-lg md:rounded-xl p-4 md:p-6 border border-gray-700 hover:border-gray-600 transition-colors duration-200 animate-slide-up"
+        class="bg-card rounded-lg p-4 md:p-6 border border-border hover:shadow-md transition-all duration-200 animate-slide-up"
       >
         <div
-          class="w-12 h-12 bg-gray-700 rounded-lg flex items-center justify-center mb-4"
+          class="w-12 h-12 bg-secondary rounded-lg flex items-center justify-center mb-4"
         >
           <svg
-            class="w-6 h-6 text-gray-300"
+            class="w-6 h-6 text-secondary-foreground"
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
@@ -34,16 +34,16 @@
             />
           </svg>
         </div>
-        <h3 class="font-['DM_Sans'] font-medium text-lg md:text-xl text-gray-200 mb-2">
+        <h3 class="font-sans font-semibold text-lg md:text-xl text-card-foreground mb-2">
           QR Code Generator
         </h3>
-        <p class="font-['DM_Sans'] text-sm md:text-base text-gray-400 mb-4">
+        <p class="font-sans text-sm md:text-base text-muted-foreground mb-4">
           Generate QR codes from URLs or text. Perfect for sharing links
           quickly.
         </p>
         <NuxtLink
           to="/qr"
-          class="inline-flex items-center px-3 md:px-4 py-2 bg-gray-700 hover:bg-gray-600 text-gray-200 rounded-lg transition-colors duration-200 font-['DM_Sans'] text-sm md:text-base"
+          class="inline-flex items-center px-3 md:px-4 py-2 bg-primary hover:shadow-md text-primary-foreground rounded-lg transition-all duration-200 font-sans text-sm md:text-base font-medium"
         >
           Generate QR Code
           <svg
@@ -64,13 +64,13 @@
 
       <!-- Array Converter Tool Card -->
       <div
-        class="bg-gray-800 rounded-lg md:rounded-xl p-4 md:p-6 border border-gray-700 hover:border-gray-600 transition-colors duration-200 animate-slide-up"
+        class="bg-card rounded-lg p-4 md:p-6 border border-border hover:shadow-md transition-all duration-200 animate-slide-up"
       >
         <div
-          class="w-12 h-12 bg-gray-700 rounded-lg flex items-center justify-center mb-4"
+          class="w-12 h-12 bg-secondary rounded-lg flex items-center justify-center mb-4"
         >
           <svg
-            class="w-6 h-6 text-gray-300"
+            class="w-6 h-6 text-secondary-foreground"
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
@@ -83,16 +83,16 @@
             />
           </svg>
         </div>
-        <h3 class="font-['DM_Sans'] font-medium text-lg md:text-xl text-gray-200 mb-2">
+        <h3 class="font-sans font-semibold text-lg md:text-xl text-card-foreground mb-2">
           Array Converter
         </h3>
-        <p class="font-['DM_Sans'] text-sm md:text-base text-gray-400 mb-4">
+        <p class="font-sans text-sm md:text-base text-muted-foreground mb-4">
           Convert a list of values into a formatted array string with
           parentheses and quotes.
         </p>
         <NuxtLink
           to="/array-converter"
-          class="inline-flex items-center px-3 md:px-4 py-2 bg-gray-700 hover:bg-gray-600 text-gray-200 rounded-lg transition-colors duration-200 font-['DM_Sans'] text-sm md:text-base"
+          class="inline-flex items-center px-3 md:px-4 py-2 bg-primary hover:shadow-md text-primary-foreground rounded-lg transition-all duration-200 font-sans text-sm md:text-base font-medium"
         >
           Convert to Array
           <svg

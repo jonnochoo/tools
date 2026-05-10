@@ -4,13 +4,13 @@
     <div class="mb-6 md:mb-10">
       <label
         for="qr-input"
-        class="block font-['DM_Sans'] text-gray-400 mb-2 md:mb-3 text-sm"
+        class="block font-sans font-medium text-foreground mb-2 md:mb-3 text-sm"
       >
         URL or Text
       </label>
       <input
         id="qr-input"
-        class="w-full p-3 md:p-4 bg-gray-700 border border-gray-600 rounded-lg text-gray-100 placeholder-gray-500 font-['JetBrains_Mono'] text-base focus:border-gray-500 focus:outline-none transition-colors duration-200"
+        class="w-full p-3 md:p-4 bg-input border border-border rounded-lg text-foreground placeholder-muted-foreground font-mono text-base focus:border-primary focus:ring-1 focus:ring-ring focus:outline-none transition-all duration-200"
         v-model="text"
         type="text"
         placeholder="Enter URL or text here"
@@ -18,17 +18,17 @@
     </div>
 
     <!-- QR Code Display -->
-    <div class="flex justify-center mb-4 md:mb-6">
+    <div class="flex justify-center mb-6 md:mb-8 p-6 md:p-8 bg-card rounded-lg border border-border">
       <img
-        class="w-full max-w-xs md:max-w-sm h-auto rounded-lg border border-gray-600 animate-fade-in-delayed"
+        class="w-full max-w-xs md:max-w-sm h-auto rounded-md border border-border shadow-md animate-fade-in-delayed"
         :src="qrcode"
         alt="Generated QR Code"
       />
     </div>
 
     <!-- Footer Text -->
-    <p class="text-center text-gray-500 text-xs md:text-sm font-['DM_Sans']">
-      Scan with your camera
+    <p class="text-center font-sans text-muted-foreground text-xs md:text-sm">
+      Scan with your camera to test the QR code
     </p>
   </div>
 </template>

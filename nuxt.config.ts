@@ -1,11 +1,17 @@
+import tailwindcss from '@tailwindcss/vite'
+
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   compatibilityDate: '2025-05-15',
   devtools: { enabled: true },
   devServer: {
-    port: 3002,
+    port: 3003,
   },
-  modules: ['@nuxtjs/tailwindcss', '@nuxtjs/google-fonts'],
+  vite: {
+    plugins: [tailwindcss()],
+  },
+  css: ['~/assets/css/globals.css'],
+  modules: ['@nuxtjs/google-fonts'],
   app: {
     head: {
       meta: [
@@ -15,11 +21,6 @@ export default defineNuxtConfig({
         },
       ],
     },
-  },
-  tailwindcss: {
-    exposeConfig: true,
-    viewer: true,
-    // and more...
   },
   googleFonts: {
     families: {

@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(rm -rf .nuxt node_modules/.vite)",
+      "Bash(npm run *)",
+      "Bash(timeout 60 bash -c 'until curl -s http://localhost:3000 > /dev/null 2>&1; do sleep 2; done')"
+    ]
+  }
+}
