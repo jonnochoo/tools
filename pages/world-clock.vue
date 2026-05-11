@@ -11,6 +11,10 @@
       </p>
     </div>
 
+    <div class="text-3xl text-muted-foreground font-mono text-center mb-2">
+      {{ currentTimeDisplay }} Sydney
+    </div>
+
     <!-- Timeline rows -->
     <div class="border border-border rounded-lg overflow-hidden bg-card">
       <WorldClockRow
@@ -42,9 +46,6 @@
           >
             Now
           </button>
-        </div>
-        <div class="text-sm text-muted-foreground font-mono text-center">
-          {{ currentTimeDisplay }} Sydney
         </div>
       </div>
     </div>
