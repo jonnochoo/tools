@@ -2,15 +2,20 @@
   <div class="max-w-4xl mx-auto">
     <!-- Welcome Section -->
     <div class="mb-12 animate-fade-in">
-      <h1 class="font-sans font-bold text-3xl md:text-4xl text-foreground mb-4">
-        Welcome to The Shed
-      </h1>
-      <p
-        class="font-sans text-base md:text-lg text-muted-foreground leading-relaxed"
-      >
-        A collection of useful utilities and tools...they are random like things
-        in a shed.
-      </p>
+      <div class="flex items-start justify-between gap-4">
+        <div>
+          <h1 class="font-sans font-bold text-3xl md:text-4xl text-foreground mb-4">
+            Welcome to The Shed
+          </h1>
+          <p
+            class="font-sans text-base md:text-lg text-muted-foreground leading-relaxed"
+          >
+            A collection of useful utilities and tools...they are random like things
+            in a shed.
+          </p>
+        </div>
+        <PWAInstallButton />
+      </div>
     </div>
 
     <!-- Tools Grid -->
