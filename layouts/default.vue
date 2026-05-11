@@ -36,6 +36,7 @@
       </div>
       <Logo />
       <div class="flex items-center gap-2">
+        <PWAInstallButton />
         <button
           @click="toggleDarkMode"
           class="p-2 hover:bg-secondary/50 rounded-lg transition-colors duration-200"
@@ -74,6 +75,7 @@
             <div class="text-sm text-muted-foreground font-mono">
               {{ currentTime }}
             </div>
+            <PWAInstallButton />
             <button
               @click="toggleDarkMode"
               class="flex items-center gap-2 px-3 py-2 bg-muted hover:bg-secondary/80 border border-border rounded-full transition-colors duration-200"

@@ -1,5 +1,6 @@
 import tailwindcss from '@tailwindcss/vite'
 
+const sw = process.env.SW === 'true'
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   compatibilityDate: '2025-05-15',
@@ -56,7 +57,11 @@ export default defineNuxtConfig({
     },
   },
   pwa: {
-    registerWebManifestInRouteRules: true,
+    strategies: sw ? 'injectManifest' : 'generateSW',
+    srcDir: sw ? 'service-worker' : undefined,
+    filename: sw ? 'sw.ts' : undefined,
+    registerType: 'autoUpdate',
+    manifestFilename: 'manifest.webmanifest',
     manifest: {
       name: 'The Shed',
       short_name: 'The Shed',
