@@ -2,9 +2,12 @@
   <div class="w-full max-w-4xl mx-auto px-0">
     <!-- Description -->
     <div class="mb-6 md:mb-8 px-4 md:px-0">
-      <p class="font-sans text-sm md:text-base text-muted-foreground leading-relaxed">
-        See what time it is across the world based on Sydney time. Drag the slider to change the time,
-        or click "Now" to reset to the current moment. Night hours are shaded darker on each row.
+      <p
+        class="font-sans text-sm md:text-base text-muted-foreground leading-relaxed"
+      >
+        See what time it is across the world based on Sydney time. Drag the
+        slider to change the time, or click "Now" to reset to the current
+        moment. Night hours are shaded darker on each row.
       </p>
     </div>
 
@@ -56,8 +59,8 @@ useHead({ title: 'World Clock - The Shed' })
 
 const ZONES = [
   { label: 'Sydney', tz: 'Australia/Sydney' },
-  { label: 'UTC', tz: 'UTC' },
   { label: 'South Korea', tz: 'Asia/Seoul' },
+  { label: 'UTC', tz: 'UTC' },
 ]
 
 // Parse a Sydney local time string ("YYYY-MM-DDTHH:MM") to UTC Date
@@ -105,13 +108,13 @@ function getNowMinutes(): number {
       timeZone: 'Australia/Sydney',
       hour: 'numeric',
       hour12: false,
-    }).format(now),
+    }).format(now)
   )
   const m = parseInt(
     new Intl.DateTimeFormat('en', {
       timeZone: 'Australia/Sydney',
       minute: 'numeric',
-    }).format(now),
+    }).format(now)
   )
   return h * 60 + m
 }
@@ -120,7 +123,7 @@ const sydneyMidnight = ref<Date>(new Date())
 const sydneyMinutes = ref<number>(0)
 
 const selectedDate = computed(
-  () => new Date(sydneyMidnight.value.getTime() + sydneyMinutes.value * 60_000),
+  () => new Date(sydneyMidnight.value.getTime() + sydneyMinutes.value * 60_000)
 )
 
 const currentTimeDisplay = computed(() => {
