@@ -6,31 +6,7 @@
     <div
       class="md:hidden fixed top-0 left-0 right-0 bg-card border-b border-border px-4 py-4 flex items-center justify-between z-50"
     >
-      <Logo />
       <div class="flex items-center gap-2">
-        <button
-          @click="toggleDarkMode"
-          class="flex items-center gap-2 px-3 py-2 bg-secondary hover:bg-secondary/80 border border-border rounded-lg transition-colors duration-200"
-          :aria-label="`Switch to ${isDarkMode ? 'light' : 'dark'} mode`"
-          :title="`${isDarkMode ? 'Light' : 'Dark'} mode`"
-        >
-          <svg
-            v-if="isDarkMode"
-            class="w-5 h-5"
-            fill="currentColor"
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"
-            />
-          </svg>
-          <svg v-else class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-            <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" />
-          </svg>
-          <span class="text-sm font-medium">{{
-            isDarkMode ? 'Dark' : 'Light'
-          }}</span>
-        </button>
         <button
           @click="mobileMenuOpen = !mobileMenuOpen"
           class="p-2 hover:bg-secondary rounded-lg transition-colors"
@@ -55,6 +31,29 @@
               stroke-width="2"
               d="M6 18L18 6M6 6l12 12"
             />
+          </svg>
+        </button>
+      </div>
+      <Logo />
+      <div class="flex items-center gap-2">
+        <button
+          @click="toggleDarkMode"
+          class="p-2 hover:bg-secondary/50 rounded-lg transition-colors duration-200"
+          :aria-label="`Switch to ${isDarkMode ? 'light' : 'dark'} mode`"
+          :title="`${isDarkMode ? 'Light' : 'Dark'} mode`"
+        >
+          <svg
+            v-if="isDarkMode"
+            class="w-5 h-5"
+            fill="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"
+            />
+          </svg>
+          <svg v-else class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" />
           </svg>
         </button>
       </div>
