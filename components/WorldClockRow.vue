@@ -24,7 +24,7 @@
         v-for="h in 24"
         :key="h"
         class="flex-1 border-r border-border/30 transition-colors duration-200"
-        :class="isNightHour(h - 1) ? 'bg-muted/60' : 'bg-secondary'"
+        :class="isNightHour(h - 1) ? 'bg-muted/60' : 'bg-accent/70'"
       />
       <!-- Cursor line -->
       <div
@@ -62,7 +62,7 @@ function localHourAt(h: number): number {
       timeZone: props.tz,
       hour: 'numeric',
       hour12: false,
-    }).format(d),
+    }).format(d)
   )
 }
 
