@@ -36,6 +36,16 @@ export default defineNuxtConfig({
           href: '/apple-touch-icon-180x180.png',
         },
       ],
+      script: [
+        {
+          innerHTML: `
+            if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+              document.documentElement.classList.add('dark');
+            }
+          `,
+          async: false,
+        },
+      ],
     },
   },
   googleFonts: {

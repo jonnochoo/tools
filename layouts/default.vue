@@ -169,13 +169,27 @@ onMounted(() => {
   updateTime()
   setInterval(updateTime, 1000)
 
-  // Load saved theme preference
+  // Initialize theme from localStorage or system preference
   const savedTheme = localStorage.getItem('theme')
   const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches
   isDarkMode.value = savedTheme ? savedTheme === 'dark' : prefersDark
 
   if (isDarkMode.value) {
     document.documentElement.classList.add('dark')
+  }
+
+  // Listen for system theme changes (only if no saved preference)
+  if (!savedTheme) {
+    const darkModeQuery = window.matchMedia('(prefers-color-scheme: dark)')
+    darkModeQuery.addEventListener('change', (e) => {
+      if (e.matches) {
+        document.documentElement.classList.add('dark')
+        isDarkMode.value = true
+      } else {
+        document.documentElement.classList.remove('dark')
+        isDarkMode.value = false
+      }
+    })
   }
 })
 
