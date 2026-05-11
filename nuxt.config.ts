@@ -12,7 +12,7 @@ export default defineNuxtConfig({
     plugins: [tailwindcss()],
   },
   css: ['~/assets/css/globals.css'],
-  modules: ['@nuxtjs/google-fonts', '@vite-pwa/nuxt'],
+  modules: ['@nuxtjs/google-fonts'],
   app: {
     head: {
       meta: [
@@ -30,11 +30,27 @@ export default defineNuxtConfig({
           media: '(prefers-color-scheme: dark)',
           content: '#a78bfa',
         },
+        {
+          name: 'apple-mobile-web-app-capable',
+          content: 'yes',
+        },
+        {
+          name: 'apple-mobile-web-app-status-bar-style',
+          content: 'black-translucent',
+        },
       ],
       link: [
         {
+          rel: 'manifest',
+          href: '/manifest.json',
+        },
+        {
           rel: 'apple-touch-icon',
           href: '/apple-touch-icon-180x180.png',
+        },
+        {
+          rel: 'icon',
+          href: '/favicon.ico',
         },
       ],
       script: [
@@ -54,45 +70,6 @@ export default defineNuxtConfig({
       'Hubot Sans': true,
       'DM Sans': [300, 400, 500, 700],
       'JetBrains Mono': [400, 500],
-    },
-  },
-  pwa: {
-    strategies: sw ? 'injectManifest' : 'generateSW',
-    srcDir: sw ? 'service-worker' : undefined,
-    filename: sw ? 'sw.ts' : undefined,
-    registerType: 'autoUpdate',
-    manifestFilename: 'manifest.webmanifest',
-    manifest: {
-      name: 'The Shed',
-      short_name: 'The Shed',
-      description: 'A collection of useful browser tools',
-      theme_color: '#7c3aed',
-      background_color: '#f0f0f5',
-      display: 'standalone',
-      orientation: 'portrait',
-      start_url: '/',
-      icons: [
-        { src: 'pwa-64x64.png', sizes: '64x64', type: 'image/png' },
-        { src: 'pwa-192x192.png', sizes: '192x192', type: 'image/png' },
-        { src: 'pwa-512x512.png', sizes: '512x512', type: 'image/png' },
-        {
-          src: 'maskable-icon-512x512.png',
-          sizes: '512x512',
-          type: 'image/png',
-          purpose: 'maskable',
-        },
-      ],
-    },
-    workbox: {
-      navigateFallback: '/',
-    },
-    client: {
-      installPrompt: true,
-      periodicSyncForUpdates: 3600,
-    },
-    devOptions: {
-      enabled: true,
-      type: 'module',
     },
   },
 })

@@ -1,0 +1,25 @@
+{
+  "theme_color": "#256179",
+  "background_color": "#f1eade",
+  "orientation": "any",
+  "display": "standalone",
+  "start_url": "/",
+  "dir": "auto",
+  "lang": "en-AU",
+  "name": "The Shed",
+  "shortName": "The Shed",
+  "icons": [
+    {
+      "src": "pwa-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "pwa-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable any"
+    }
+  ]
+}
