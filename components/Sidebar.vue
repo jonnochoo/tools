@@ -27,6 +27,9 @@
         <SidebarNavLink to="/world-clock" @close="closeSidebar"
           >World Clock</SidebarNavLink
         >
+        <SidebarNavLink to="/speed-converter" @close="closeSidebar"
+          >Speed Converter</SidebarNavLink
+        >
       </ul>
     </nav>
   </aside>
