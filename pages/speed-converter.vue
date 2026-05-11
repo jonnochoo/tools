@@ -12,17 +12,24 @@
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8">
       <!-- MPH to KM Section -->
       <div class="space-y-4">
-        <h3
-          class="font-sans font-semibold text-base md:text-lg text-foreground"
-        >
-          Miles Per Hour (mph)
-        </h3>
+        <div class="flex items-center justify-between">
+          <h3
+            class="font-sans font-semibold text-base md:text-lg text-foreground"
+          >
+            Miles Per Hour (mph)
+          </h3>
+          <div class="text-2xl md:text-3xl font-mono font-bold text-primary">
+            {{ mph }}
+          </div>
+        </div>
 
         <input
           v-model.number="mph"
-          type="number"
-          class="w-full px-3 md:px-4 py-3 md:py-4 bg-input border border-border rounded-lg text-foreground placeholder-muted-foreground font-mono text-sm md:text-base focus:border-primary focus:ring-1 focus:ring-ring focus:outline-none transition-all duration-200"
-          placeholder="Enter speed in mph..."
+          type="range"
+          min="0"
+          max="200"
+          step="1"
+          class="w-full h-2 bg-secondary rounded-lg appearance-none cursor-pointer accent-primary"
         />
 
         <div class="text-xs md:text-sm text-muted-foreground font-sans">
