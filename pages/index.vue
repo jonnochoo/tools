@@ -205,6 +205,56 @@
           </svg>
         </NuxtLink>
       </div>
+
+      <!-- World Clock Tool Card -->
+      <div
+        class="bg-card rounded-lg p-4 md:p-6 border border-border hover:shadow-md transition-all duration-200 animate-slide-up"
+      >
+        <div
+          class="w-12 h-12 bg-secondary rounded-lg flex items-center justify-center mb-4"
+        >
+          <svg
+            class="w-6 h-6 text-secondary-foreground"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm.5-13H11v6l5.2 3.2.8-1.3-5.5-3.4V7z"
+            />
+          </svg>
+        </div>
+        <h3
+          class="font-sans font-semibold text-lg md:text-xl text-card-foreground mb-2"
+        >
+          World Clock
+        </h3>
+        <p class="font-sans text-sm md:text-base text-muted-foreground mb-4">
+          Visualize what time it is across different timezones. See when it's working hours in different parts of the world.
+        </p>
+        <NuxtLink
+          to="/world-clock"
+          class="inline-flex items-center px-3 md:px-4 py-2 bg-primary hover:shadow-md text-primary-foreground rounded-lg transition-all duration-200 font-sans text-sm md:text-base font-medium"
+        >
+          View World Clock
+          <svg
+            class="w-4 h-4 ml-2"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M9 5l7 7-7 7"
+            />
+          </svg>
+        </NuxtLink>
+      </div>
     </div>
   </div>
 </template>

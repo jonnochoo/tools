@@ -24,6 +24,9 @@
         <SidebarNavLink to="/password-generator" @close="closeSidebar"
           >Password Generator</SidebarNavLink
         >
+        <SidebarNavLink to="/world-clock" @close="closeSidebar"
+          >World Clock</SidebarNavLink
+        >
       </ul>
     </nav>
   </aside>

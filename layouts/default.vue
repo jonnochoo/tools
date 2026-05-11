@@ -148,6 +148,12 @@ const pageTitle = computed(() => {
       return 'QR Code Generator'
     case '/array-converter':
       return 'Array Converter'
+    case '/cricket-averages':
+      return 'Cricket Averages'
+    case '/password-generator':
+      return 'Password Generator'
+    case '/world-clock':
+      return 'World Clock'
     default:
       return 'The Shed'
   }
