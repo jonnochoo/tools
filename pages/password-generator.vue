@@ -14,10 +14,10 @@
           <h3 class="font-sans font-semibold text-base md:text-lg text-foreground">
             Generated Password
           </h3>
-          <button
+          <BaseButton
             @click="copyToClipboard"
             :disabled="!password"
-            class="px-3 md:px-4 py-2 bg-primary hover:shadow-md hover:cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed text-primary-foreground rounded-lg transition-all duration-200 font-sans text-xs md:text-sm font-medium flex items-center justify-center sm:justify-start space-x-2 w-full sm:w-auto"
+            class="sm:justify-start w-full sm:w-auto"
             :class="{ 'bg-green-600': copied }"
           >
             <svg
@@ -42,7 +42,7 @@
               />
             </svg>
             <span>{{ copied ? 'Copied!' : 'Copy' }}</span>
-          </button>
+          </BaseButton>
         </div>
 
         <!-- Password Display -->
@@ -82,20 +82,16 @@
       </div>
 
       <!-- Generate Button -->
-      <button
+      <BaseButton
         @click="generate"
         :disabled="isGenerating"
-        class="w-full px-4 py-3 md:py-4 bg-primary hover:shadow-md hover:cursor-pointer disabled:opacity-80 disabled:cursor-not-allowed text-primary-foreground rounded-lg transition-all duration-200 font-sans text-sm md:text-base font-semibold relative overflow-hidden"
+        :loading="isGenerating"
+        :full-width="true"
+        size="lg"
         :class="{ 'scale-95': isGenerating }"
       >
-        <span :class="{ 'opacity-0': isGenerating }">Generate Password</span>
-        <span v-if="isGenerating" class="absolute inset-0 flex items-center justify-center">
-          <svg class="animate-spin h-5 w-5" fill="none" viewBox="0 0 24 24">
-            <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
-            <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
-          </svg>
-        </span>
-      </button>
+        Generate Password
+      </BaseButton>
     </div>
   </div>
 </template>

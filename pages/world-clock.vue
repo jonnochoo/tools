@@ -40,12 +40,9 @@
             step="15"
             class="flex-1 h-2 bg-secondary rounded-lg accent-primary cursor-pointer"
           />
-          <button
-            @click="setToNow"
-            class="px-4 py-2 bg-primary text-primary-foreground rounded-lg font-sans text-sm font-medium hover:shadow-md transition-all duration-200 active:shadow-sm whitespace-nowrap"
-          >
+          <BaseButton @click="setToNow" class="active:shadow-sm whitespace-nowrap">
             Now
-          </button>
+          </BaseButton>
         </div>
       </div>
     </div>

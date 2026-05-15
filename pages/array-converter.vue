@@ -55,10 +55,10 @@
           <h3 class="font-sans font-semibold text-base md:text-lg text-foreground">
             Output
           </h3>
-          <button
+          <BaseButton
             @click="copyToClipboard"
             :disabled="!outputText"
-            class="px-3 md:px-4 py-2 bg-primary hover:shadow-md disabled:opacity-50 disabled:cursor-not-allowed text-primary-foreground rounded-lg transition-all duration-200 font-sans text-xs md:text-sm font-medium flex items-center justify-center sm:justify-start space-x-2 w-full sm:w-auto"
+            class="sm:justify-start w-full sm:w-auto"
           >
             <svg
               class="w-4 h-4"
@@ -74,7 +74,7 @@
               />
             </svg>
             <span>Copy</span>
-          </button>
+          </BaseButton>
         </div>
 
         <!-- Output Textarea -->

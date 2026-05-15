@@ -36,30 +36,10 @@
           Common speeds:
         </div>
         <div class="grid grid-cols-2 gap-2">
-          <button
-            @click="mph = 30"
-            class="px-2 py-1 bg-secondary hover:bg-secondary/80 text-secondary-foreground rounded text-xs font-sans transition-all duration-200"
-          >
-            30 mph
-          </button>
-          <button
-            @click="mph = 50"
-            class="px-2 py-1 bg-secondary hover:bg-secondary/80 text-secondary-foreground rounded text-xs font-sans transition-all duration-200"
-          >
-            50 mph
-          </button>
-          <button
-            @click="mph = 90"
-            class="px-2 py-1 bg-secondary hover:bg-secondary/80 text-secondary-foreground rounded text-xs font-sans transition-all duration-200"
-          >
-            90 mph
-          </button>
-          <button
-            @click="mph = 100"
-            class="px-2 py-1 bg-secondary hover:bg-secondary/80 text-secondary-foreground rounded text-xs font-sans transition-all duration-200"
-          >
-            100 mph
-          </button>
+          <BaseButton variant="secondary" size="sm" @click="mph = 30">30 mph</BaseButton>
+          <BaseButton variant="secondary" size="sm" @click="mph = 50">50 mph</BaseButton>
+          <BaseButton variant="secondary" size="sm" @click="mph = 90">90 mph</BaseButton>
+          <BaseButton variant="secondary" size="sm" @click="mph = 100">100 mph</BaseButton>
         </div>
       </div>
 
