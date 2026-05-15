@@ -2,9 +2,9 @@
   <div class="w-full max-w-4xl mx-auto px-0">
     <div class="mb-6 md:mb-8">
       <p
-        class="font-sans text-sm md:text-base text-muted-foreground leading-relaxed"
+        class="font-sans text-sm md:text-base text-muted-foreground leading-relaxed text-center"
       >
-        Can't decide what to eat? Let fate spin you a meal!
+        Can't decide what to eat? Spin the rolodex!
       </p>
     </div>
 
@@ -54,7 +54,7 @@
           v-if="result && !spinning"
           class="result-card bg-card border border-border font-sans"
         >
-          <p class="text-muted-foreground text-sm mb-2">What about:</p>
+          <p class="text-muted-foreground text-sm mb-2">Why not:</p>
           <div class="flex items-center justify-center gap-3">
             <span class="result-emoji">{{ result.emoji }}</span>
             <span class="text-foreground font-bold text-2xl md:text-3xl">{{

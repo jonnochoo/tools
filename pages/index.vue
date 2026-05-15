@@ -4,14 +4,16 @@
     <div class="mb-12 animate-fade-in">
       <div class="flex items-start justify-between gap-4">
         <div>
-          <h1 class="font-sans font-bold text-3xl md:text-4xl text-foreground mb-4">
+          <h1
+            class="font-sans font-bold text-3xl md:text-4xl text-foreground mb-4"
+          >
             Welcome to The Shed
           </h1>
           <p
             class="font-sans text-base md:text-lg text-muted-foreground leading-relaxed"
           >
-            A collection of useful utilities and tools...they are random like things
-            in a shed.
+            A collection of useful utilities and tools...they are random like
+            things in a shed.
           </p>
         </div>
         <PWAInstallButton />
@@ -188,7 +190,8 @@
           Password Generator
         </h3>
         <p class="font-sans text-sm md:text-base text-muted-foreground mb-4">
-          Generate secure random passwords with uppercase, lowercase, numbers, and symbols.
+          Generate secure random passwords with uppercase, lowercase, numbers,
+          and symbols.
         </p>
         <NuxtLink
           to="/password-generator"
@@ -238,7 +241,8 @@
           World Clock
         </h3>
         <p class="font-sans text-sm md:text-base text-muted-foreground mb-4">
-          Visualize what time it is across different timezones. See when it's working hours in different parts of the world.
+          Visualize what time it is across different timezones. See when it's
+          working hours in different parts of the world.
         </p>
         <NuxtLink
           to="/world-clock"
@@ -325,8 +329,7 @@
           Meal Spinner
         </h3>
         <p class="font-sans text-sm md:text-base text-muted-foreground mb-4">
-          Can't decide what to eat? Spin the rolodex and let fate pick tonight's
-          dinner.
+          Can't decide what to eat? Spin the rolodex!
         </p>
         <NuxtLink
           to="/meal-spinner"
