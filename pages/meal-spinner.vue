@@ -83,6 +83,7 @@ const meals = [
   { emoji: '🍗', name: 'KFC' },
   { emoji: '🥖', name: 'Pork Rolls' },
   { emoji: '🍣', name: 'Sushi' },
+  { emoji: '🍕', name: 'Pizza' },
 ]
 
 const REPEATS = 40
