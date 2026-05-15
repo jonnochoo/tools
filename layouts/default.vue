@@ -155,6 +155,10 @@ const pageTitle = computed(() => {
       return 'Password Generator'
     case '/world-clock':
       return 'World Clock'
+    case '/speed-converter':
+      return 'Speed Converter'
+    case '/meal-spinner':
+      return 'Meal Spinner'
     default:
       return 'The Shed'
   }

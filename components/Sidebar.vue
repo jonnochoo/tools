@@ -30,6 +30,9 @@
         <SidebarNavLink to="/speed-converter" @close="closeSidebar"
           >Speed Converter</SidebarNavLink
         >
+        <SidebarNavLink to="/meal-spinner" @close="closeSidebar"
+          >Meal Spinner</SidebarNavLink
+        >
       </ul>
     </nav>
   </aside>

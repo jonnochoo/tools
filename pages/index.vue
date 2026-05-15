@@ -310,6 +310,44 @@
           </svg>
         </NuxtLink>
       </div>
+      <!-- Meal Spinner Tool Card -->
+      <div
+        class="bg-card rounded-lg p-4 md:p-6 border border-border hover:shadow-md transition-all duration-200 animate-slide-up"
+      >
+        <div
+          class="w-12 h-12 bg-secondary rounded-lg flex items-center justify-center mb-4"
+        >
+          <span class="text-xl">🍽️</span>
+        </div>
+        <h3
+          class="font-sans font-semibold text-lg md:text-xl text-card-foreground mb-2"
+        >
+          Meal Spinner
+        </h3>
+        <p class="font-sans text-sm md:text-base text-muted-foreground mb-4">
+          Can't decide what to eat? Spin the rolodex and let fate pick tonight's
+          dinner.
+        </p>
+        <NuxtLink
+          to="/meal-spinner"
+          class="inline-flex items-center px-3 md:px-4 py-2 bg-primary hover:shadow-md text-primary-foreground rounded-lg transition-all duration-200 font-sans text-sm md:text-base font-medium"
+        >
+          Spin a Meal
+          <svg
+            class="w-4 h-4 ml-2"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M9 5l7 7-7 7"
+            />
+          </svg>
+        </NuxtLink>
+      </div>
     </div>
   </div>
 </template>
