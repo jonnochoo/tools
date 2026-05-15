@@ -11,10 +11,6 @@
     <div class="flex flex-col items-center gap-8">
       <!-- Rolodex Drum -->
       <div class="rolodex-outer">
-        <!-- Side selector arrows -->
-        <div class="selector-arrow left">&#9658;</div>
-        <div class="selector-arrow right">&#9668;</div>
-
         <!-- Top/bottom selection lines -->
         <div class="selector-line top-line" />
         <div class="selector-line bottom-line" />
@@ -204,24 +200,6 @@ function spin() {
 }
 .bottom-line {
   top: calc(50% + 38px);
-}
-
-/* ── Side arrows ── */
-.selector-arrow {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  color: var(--color-primary);
-  font-size: 1.1rem;
-  z-index: 20;
-  pointer-events: none;
-  line-height: 1;
-}
-.selector-arrow.left {
-  left: -22px;
-}
-.selector-arrow.right {
-  right: -22px;
 }
 
 /* ── The scrolling drum ── */
