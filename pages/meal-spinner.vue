@@ -61,12 +61,6 @@
               result.name
             }}</span>
           </div>
-          <button
-            class="mt-4 text-xs text-muted-foreground underline underline-offset-2 hover:text-foreground transition-colors"
-            @click="spin"
-          >
-            spin again
-          </button>
         </div>
       </Transition>
     </div>
