@@ -351,6 +351,56 @@
           </svg>
         </NuxtLink>
       </div>
+      <!-- CSV Anonymiser Tool Card -->
+      <div
+        class="bg-card rounded-lg p-4 md:p-6 border border-border hover:shadow-md transition-all duration-200 animate-slide-up"
+      >
+        <div
+          class="w-12 h-12 bg-secondary rounded-lg flex items-center justify-center mb-4"
+        >
+          <svg
+            class="w-6 h-6 text-secondary-foreground"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+            />
+          </svg>
+        </div>
+        <h3
+          class="font-sans font-semibold text-lg md:text-xl text-card-foreground mb-2"
+        >
+          CSV Anonymiser
+        </h3>
+        <p class="font-sans text-sm md:text-base text-muted-foreground mb-4">
+          Drop in a CSV and swap sensitive columns for realistic fake data.
+          Runs entirely in your browser — nothing is uploaded.
+        </p>
+        <NuxtLink
+          to="/csv-anonymiser"
+          class="inline-flex items-center px-3 md:px-4 py-2 bg-primary hover:shadow-md text-primary-foreground rounded-lg transition-all duration-200 font-sans text-sm md:text-base font-medium"
+        >
+          Anonymise CSV
+          <svg
+            class="w-4 h-4 ml-2"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M9 5l7 7-7 7"
+            />
+          </svg>
+        </NuxtLink>
+      </div>
     </div>
   </div>
 </template>

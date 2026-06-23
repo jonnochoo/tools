@@ -33,6 +33,9 @@
         <SidebarNavLink to="/meal-spinner" @close="closeSidebar"
           >Meal Spinner</SidebarNavLink
         >
+        <SidebarNavLink to="/csv-anonymiser" @close="closeSidebar"
+          >CSV Anonymiser</SidebarNavLink
+        >
       </ul>
     </nav>
   </aside>
