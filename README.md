@@ -1,75 +1,55 @@
-# Nuxt Minimal Starter
+# The Shed
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+A collection of small, useful web utilities — random like things in a shed. Built with [Nuxt](https://nuxt.com/) and Tailwind CSS.
+
+## Tools
+
+- **QR Code Generator** (`/qr`) — Generate QR codes from URLs or text
+- **Array Converter** (`/array-converter`) — Convert a list of values into a formatted array string
+- **Cricket Averages** (`/cricket-averages`) — Track live/current/if-dismissed batting averages
+- **Password Generator** (`/password-generator`) — Generate secure random passwords
+- **World Clock** (`/world-clock`) — Compare times across timezones
+- **Speed Converter** (`/speed-converter`) — Convert between mph and km/h
+- **Meal Spinner** (`/meal-spinner`) — Spin a rolodex to decide what to eat
+- **CSV Anonymiser** (`/csv-anonymiser`) — Swap sensitive CSV columns for realistic fake data, entirely in-browser (nothing is uploaded)
 
 ## Setup
 
-Make sure to install dependencies:
+Install dependencies:
 
 ```bash
-# npm
 npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
 ```
 
-## Development Server
+## Development
 
-Start the development server on `http://localhost:3000`:
+Start the dev server on `http://localhost:3000`:
 
 ```bash
-# npm
 npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
 ```
 
 ## Production
 
-Build the application for production:
+Build for production:
 
 ```bash
-# npm
 npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
 ```
 
-Locally preview production build:
+Locally preview the production build:
 
 ```bash
-# npm
 npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
 ```
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+Check out the [Nuxt deployment docs](https://nuxt.com/docs/getting-started/deployment) for more information.
+
+## Tech Stack
+
+- [Nuxt 4](https://nuxt.com/) / Vue 3
+- [Tailwind CSS](https://tailwindcss.com/)
+- [VueUse](https://vueuse.org/)
+- [Papa Parse](https://www.papaparse.com/) (CSV parsing)
+- [faker.js](https://fakerjs.dev/) (CSV anonymisation)
+- [qrcode](https://github.com/soldair/node-qrcode)
