@@ -159,6 +159,8 @@ const pageTitle = computed(() => {
       return 'Speed Converter'
     case '/meal-spinner':
       return 'Meal Spinner'
+    case '/percentage-change':
+      return 'Percentage Change'
     default:
       return 'The Shed'
   }

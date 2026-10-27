@@ -36,6 +36,9 @@
         <SidebarNavLink to="/csv-anonymiser" @close="closeSidebar"
           >CSV Anonymiser</SidebarNavLink
         >
+        <SidebarNavLink to="/percentage-change" @close="closeSidebar"
+          >Percentage Change</SidebarNavLink
+        >
       </ul>
     </nav>
   </aside>
