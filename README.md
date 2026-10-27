@@ -12,6 +12,7 @@ A collection of small, useful web utilities — random like things in a shed. Bu
 - **Speed Converter** (`/speed-converter`) — Convert between mph and km/h
 - **Meal Spinner** (`/meal-spinner`) — Spin a rolodex to decide what to eat
 - **CSV Anonymiser** (`/csv-anonymiser`) — Swap sensitive CSV columns for realistic fake data, entirely in-browser (nothing is uploaded)
+- **Percentage Change** (`/percentage-change`) — Work out the percentage increase or decrease between two numbers
 
 ## Setup
 
