@@ -161,6 +161,10 @@ const pageTitle = computed(() => {
       return 'Meal Spinner'
     case '/percentage-change':
       return 'Percentage Change'
+    case '/duplicate-finder':
+      return 'Duplicate Finder'
+    case '/text-compare':
+      return 'Text Compare'
     default:
       return 'The Shed'
   }

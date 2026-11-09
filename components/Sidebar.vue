@@ -39,6 +39,12 @@
         <SidebarNavLink to="/percentage-change" @close="closeSidebar"
           >Percentage Change</SidebarNavLink
         >
+        <SidebarNavLink to="/duplicate-finder" @close="closeSidebar"
+          >Duplicate Finder</SidebarNavLink
+        >
+        <SidebarNavLink to="/text-compare" @close="closeSidebar"
+          >Text Compare</SidebarNavLink
+        >
       </ul>
     </nav>
   </aside>
