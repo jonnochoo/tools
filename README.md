@@ -13,6 +13,8 @@ A collection of small, useful web utilities — random like things in a shed. Bu
 - **Meal Spinner** (`/meal-spinner`) — Spin a rolodex to decide what to eat
 - **CSV Anonymiser** (`/csv-anonymiser`) — Swap sensitive CSV columns for realistic fake data, entirely in-browser (nothing is uploaded)
 - **Percentage Change** (`/percentage-change`) — Work out the percentage increase or decrease between two numbers
+- **Duplicate Finder** (`/duplicate-finder`) — Find repeated lines in a list and get a de-duplicated copy
+- **Text Compare** (`/text-compare`) — Compare two lists of lines and see which match and which are unique to each
 
 ## Setup
 
